@@ -54,9 +54,10 @@ const NewPlace = () => {
       history.push('/');
     } catch (err) {}
   };
-  
+
   return (
-    <React.Fragment>
+    <div className="video-container">
+      <video src='/videos/video-1.mp4' autoPlay loop muted />
       <ErrorModal error={error} onClear={clearError} />
       <form className="place-form" onSubmit={placeSubmitHandler}>
         {isLoading && <LoadingSpinner asOverlay />}
@@ -89,7 +90,7 @@ const NewPlace = () => {
           ADD PLACE
         </Button>
       </form>
-    </React.Fragment>
+    </div>
   );
 };
 

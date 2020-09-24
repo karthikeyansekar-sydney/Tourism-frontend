@@ -16,9 +16,9 @@ const DUMMY_PLACES = [
     creator: 'u1'
   },
   {
-    id: 'p1',
+    id: 'p2',
     title: 'Sydney Harbour Bridge',
-    description: 'one of the most famous sky scrapers in the world!',
+    description: 'Awesome bridge in an awesome country',
     imageUrl: 'https://d12dkjq56sjcos.cloudfront.net/pub/media/magefan_blog/sightseeing/Sydney-Landmark-Sydney-Harbour-Bridge-Big-Bus-Tours.jpg',
     address: '20 W 34th St, New York, NY 10001',
     location: {

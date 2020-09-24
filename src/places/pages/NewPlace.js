@@ -49,12 +49,12 @@ const NewPlace = () => {
           address: formState.inputs.address.value,
           creator: auth.userId
         }),
-        { 'Content-Type': 'application/json' }
+        { 'Content-Type': 'application/json','Authorization': 'Bearer ' + auth.token }
       );
       history.push('/');
     } catch (err) {}
   };
-
+  
   return (
     <React.Fragment>
       <ErrorModal error={error} onClear={clearError} />
